@@ -37,6 +37,13 @@ namespace G__Interpreter
                     return (P2.Y - P1.Y) / (P2.X - P1.X);
                 }
             }
+            public double Intercept
+            {
+                get
+                {
+                    return P1.Y - Slope * P1.X;
+                }
+            }
         }
         public class Segment : Figure
         {
@@ -54,6 +61,13 @@ namespace G__Interpreter
                     return (P2.Y - P1.Y) / (P2.X - P1.X);
                 }
             }
+            public double Intercept
+            {
+                get
+                {
+                    return P1.Y - Slope * P1.X;
+                }
+            }
         }
         public class Ray : Figure
         {
@@ -69,6 +83,13 @@ namespace G__Interpreter
                 get
                 {
                     return (P2.Y - P1.Y) / (P2.X - P1.X);
+                }
+            }
+            public double Intercept
+            {
+                get
+                {
+                    return P1.Y - Slope * P1.X;
                 }
             }
         }
